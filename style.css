@@ -1,0 +1,111 @@
+body {
+    margin: 0;
+    font-family: 'Montserrat', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), #59B2F4;
+}
+
+.container {
+    text-align: center;
+    position: relative;
+}
+
+.weather-card {
+    background-color: #16213e;
+    border-radius: 20px;
+    padding: 20px;
+    box-shadow: 0 0 30px rgba(0, 0, 0, 0.5);
+    width: 450px;
+    position: relative;
+}
+.weather-card h1{
+    color: #fff;
+}
+.input-section {
+    position: relative;
+}
+
+#city-input {
+    padding: 15px;
+    margin: 10px 0;
+    width: 70%;
+    border: 1px solid #e94560; 
+    border-radius: 5px;
+    font-size: 16px;
+    background-color: #0f3460;
+    color: #ffffff; 
+}
+
+#city-input:focus {
+    outline: none;
+    border-color: #e94560;
+}
+
+#city-input::placeholder {
+    color: #aaa; 
+}
+
+#suggestions {
+    background-color: #ffffff; 
+    color: #333;
+    position: absolute;
+    width: 100%;
+    max-height: 150px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-top: 5px;
+    display: none;
+    z-index: 1;
+}
+
+#suggestions p {
+    padding: 10px;
+    margin: 0;
+    cursor: pointer;
+}
+
+#suggestions p:hover {
+    background-color: #e94560; 
+    color: #ffffff; 
+}
+
+#city-input-btn, #geo-btn {
+    padding: 10px;
+    background-color: #e94560;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+}
+
+#city-input-btn:hover, #geo-btn:hover {
+    background-color: #ff6f61;
+}
+
+#weather-info {
+    display: none;
+    margin-top: 20px;
+    color: #ffffff; 
+}
+
+#weather-icon {
+    width: 100px;
+    height: 100px;
+}
+
+#temperature {
+    font-size: 24px;
+    font-weight: bold;
+    margin: 8px 0;
+}
+
+#description, #wind-speed, #date {
+    font-size: 18px;
+    color: #ffffff; 
+}
